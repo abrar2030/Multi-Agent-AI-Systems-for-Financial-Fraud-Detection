@@ -65,11 +65,7 @@ fraud-detection-multiagent/
 ├── data/                 # Generated datasets
 ├── figures/              # Publication-ready plots
 ├── results/              # Experiment outputs & logs
-├── paper_ml/             # ML research paper (LaTeX)
-├── paper_industry/       # Industry white paper (LaTeX)
-├── ethics/               # IRB docs, compliance checklists
 ├── CI/                   # GitHub Actions workflows
-└── reproducibility-checklist.md
 ```
 
 ## Reproducing Results
@@ -116,22 +112,3 @@ python code/scripts/run_experiment.py --mode quick --n_samples 5000
 - **Investigator Review**: Required for medium-confidence cases (0.7-0.95 score)
 - **Audit Logs**: Complete trace of all flagged transactions
 - **GDPR Compliance**: Right to explanation via narrative generator
-
-## Citation
-
-```bibtex
-@article{multiagent_fraud_2026,
-  title={Multi-Agent AI Systems for Financial Fraud Detection},
-  author={[Authors]},
-  year={2026},
-  journal={arXiv preprint arXiv:XXXX.XXXXX}
-}
-```
-
-## License
-
-MIT License - See LICENSE file for details
-
-## Contact
-
-For questions, please open an issue or contact [email].
