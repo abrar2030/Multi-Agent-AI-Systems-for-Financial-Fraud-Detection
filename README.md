@@ -65,7 +65,6 @@ fraud-detection-multiagent/
 ├── data/                 # Generated datasets
 ├── figures/              # Publication-ready plots
 ├── results/              # Experiment outputs & logs
-├── CI/                   # GitHub Actions workflows
 ```
 
 ## Reproducing Results
