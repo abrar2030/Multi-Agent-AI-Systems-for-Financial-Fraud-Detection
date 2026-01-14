@@ -7,6 +7,7 @@ This repository implements a complete multi-agent system for financial fraud det
 ## System Architecture
 
 **Agents:**
+
 - **Data Retrieval Agent**: Ingests and preprocesses transaction streams
 - **Feature Engineer Agent**: Extracts temporal, statistical, and behavioral features
 - **Anomaly Detector Agent**: ML ensemble (Isolation Forest, XGBoost) for fraud scoring
@@ -18,6 +19,7 @@ This repository implements a complete multi-agent system for financial fraud det
 ## Quick Start
 
 ### Prerequisites
+
 - Python 3.9+
 - Docker (optional)
 - 8GB RAM minimum
@@ -26,7 +28,8 @@ This repository implements a complete multi-agent system for financial fraud det
 
 ```bash
 # Clone repository
-cd fraud-detection-multiagent
+git clone https://github.com/quantsingularity/Multi-Agent-AI-Systems-for-Financial-Fraud-Detection
+cd Multi-Agent-AI-Systems-for-Financial-Fraud-Detection
 
 # Install dependencies
 cd code
@@ -94,12 +97,12 @@ python code/scripts/run_experiment.py --mode quick --n_samples 5000
 
 ## Key Results (from real runs on synthetic data)
 
-| Model | Precision | Recall | F1 | AUC-ROC |
-|-------|-----------|--------|-----|---------|
-| Isolation Forest | 0.42 | 0.68 | 0.52 | 0.84 |
-| XGBoost | 0.71 | 0.83 | 0.76 | 0.92 |
-| Ensemble | 0.74 | 0.81 | 0.77 | 0.93 |
-| + LLM Narrative | 0.78 | 0.79 | 0.78 | 0.94 |
+| Model            | Precision | Recall | F1   | AUC-ROC |
+| ---------------- | --------- | ------ | ---- | ------- |
+| Isolation Forest | 0.42      | 0.68   | 0.52 | 0.84    |
+| XGBoost          | 0.71      | 0.83   | 0.76 | 0.92    |
+| Ensemble         | 0.74      | 0.81   | 0.77 | 0.93    |
+| + LLM Narrative  | 0.78      | 0.79   | 0.78 | 0.94    |
 
 **Detection Latency:** Mean 127ms, P95 340ms  
 **Investigator Time Saved:** 67% reduction in false positive review time
